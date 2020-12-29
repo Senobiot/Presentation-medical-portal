@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Pesentation" />
+    <meta name="author" lang="en" content="Aliaksandr Kulik" />
+    <title>Presentation</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <base href="/">
+    <!-- <link rel="stylesheet" href="/path/to/styles/default.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+          <section class="slide_title">
+            <div class="title">Loadash</div>
+            <img data-src="./img/lodashlogo.png" alt="Logo" class="logo">
+          </section>
+          <section>
+              <section class="slide_history"><span class="loadash">Lodash</span><br> is a <span class="javascript">JavaScript</span>
+                library which provides utility functions for common programming tasks using the functional programming paradigm.<br><br>
+                In addition, it’s the most famous successor of <span class="javascript">underscore.js</span><br><br>
+                <span class="javascript">Lodash</span> helps programmers write more concise and easier to maintain JavaScript code.
+              </section>
+              <section>
+                <p>We are programming every day, and work on different tasks, solving it we working with <span class="blue">fucntions</span>,
+                  <span class="blue">arrays</span>, <span class="blue">numbers</span>, <span class="blue">objects</span>, <span class="blue">strings</span>, <span class="blue">etc.</span><br><br>Loadash helps us when we working with all types of values
+                  and safe your time from writing generic functions and so on.
+                  At the result our code will be cleaner and more obvious.
+                </p>
+              </section>
+          </section>
+          <section class="slide_mainAreas">
+            <p><span class="loadash">Lodash</span> can be broken down into several main areas:</p>
+            <ul>
+              <li><span>Array: </span>creating, splitting, combining, modifying, and compressing</li>
+              <li><span>Collection: </span>iterating, sorting, filtering, splitting, and building</li>
+              <li><span>Date: </span>gets the tamestamps</li>         
+              <li><span>Function: </span>simplifying binding, decorating, constraining, throttling, debouncing, currying, and changing the pointer</li>
+              <li><span>Lang: </span>checks if value is the language type</li>
+              <li><span>Math: </span>different math operations</li>
+              <li><span>Number: </span>number operations</li>  
+              <li><span>Object: </span>accessing, extending, merging, defaults, and transforming</li>
+              <li><span>Seq: </span>chaining, wrapping, filtering, and testing.</li>
+              <li><span>String: </span>conversion functions for performing basic string operations, such as trimming, converting to uppercase, camel case, etc.</li>
+              <li><span>Utilities: </span>for simplifying common programming tasks such as determining type as well as simplifying math operations.</li>
+            </ul>
+          </section>
+
+        <!-- ----------------------arrays------------------------------------- -->
+
+          <section>
+            <section class="category-all">
+              <span class="subtitle">Arrays </span> <br> let's see on array's methods, providing by library:
+                <div class="category-wrapper">
+                  <p class="animated fadeInDown" data-delay="200">_.chunk</p>
+                  <p class="animated fadeInDown" data-delay="200">_.compact</p>
+                  <p class="animated fadeInDown" data-delay="200">_.concat</p>
+                  <p class="animated fadeInDown" data-delay="200">_.difference</p>
+                  <p class="animated fadeInDown" data-delay="200">_.drop</p>
+                  <p class="animated fadeInDown" data-delay="200">_.fill</p>
+                  <p class="animated fadeInDown" data-delay="200">_.findIndex</p>
+                  <p class="animated fadeInDown" data-delay="200">_.first -> head</p>
+                  <p class="animated fadeInDown" data-delay="200">_.flatten</p>
+                  <p class="animated fadeInDown" data-delay="200">_.fromPairs</p>
+                  <p class="animated fadeInDown" data-delay="200">_.head</p>
+                  <p class="animated fadeInDown" data-delay="200">_.indexOf</p>
+                  <p class="animated fadeInDown" data-delay="200">_.initial</p>
+                  <p class="animated fadeInDown" data-delay="200">_.intersection</p>
+                  <p class="animated fadeInDown" data-delay="200">_.join</p>
+                  <p class="animated fadeInDown" data-delay="200">_.last</p>
+                  <p class="animated fadeInDown" data-delay="200">_.nth</p>
+                  <p class="animated fadeInDown" data-delay="200">_.pull</p>
+                  <p class="animated fadeInDown" data-delay="200">_.remove</p>
+                  <p class="animated fadeInDown" data-delay="200">_.reverse</p>
+                  <p class="animated fadeInDown" data-delay="200">_.slice</p>
+                  <p class="animated fadeInDown" data-delay="200">_.sortedIndex</p>
+                  <p class="animated fadeInDown" data-delay="200">_.tail</p>
+                  <p class="animated fadeInDown" data-delay="200">_.take</p>
+                  <p class="animated fadeInDown" data-delay="200">_.union</p>
+                  <p class="animated fadeInDown" data-delay="200">_.uniq</p>
+                  <p class="animated fadeInDown" data-delay="200">_.unzip</p>
+                  <p class="animated fadeInDown" data-delay="200">_.without</p>
+                  <p class="animated fadeInDown" data-delay="200">_.xor</p>
+                  <p class="animated fadeInDown" data-delay="200">_.zip</p>
+                  <p class="animated fadeInDown" data-delay="200">_.zipObject</p>
+              </div>
+            </section>
+            <section style="font-size: 18px;">
+              <p class="method-name"><span class="blue">_......</span>(........)</p>
+                <p class="middle">
+                  Adds .......................<br><br>
+                <b>Arguments:</b><br>
+                <span class="blue">......: </span>The.......<br>
+                <span class="blue">....: </span>.....<br>
+                <span class="blue">.....: </span>T.....<br>
+                <span class="blue">...: </span>.....<br><br>
+                <b>Returns:</b><br>
+                <span class="blue">: </span>Returns .....<br><br>
+                Example:
+              </p>
+                <pre class="pre-code"><code class="code JavaScript">
+                  some code
+                  </code></pre>
+            </section>
+          </section>
+
+        <!-- ----------------------Collection---------------------------------- -->
+
+        <section>
+          <section class="category-all">
+            <span class="subtitle">Collections </span> <br> There are some collection's methods, providing by library:
+              <div class="category-wrapper">
+                <p class="animated fadeInDown" data-delay="200">_.countBy</p>
+                <p class="animated fadeInDown" data-delay="200">_.each -> forEach</p>
+                <p class="animated fadeInDown" data-delay="200">_.eachRight -> forEachRight</p>
+                <p class="animated fadeInDown" data-delay="200">_.every</p>
+                <p class="animated fadeInDown" data-delay="200">_.filter</p>
+                <p class="animated fadeInDown" data-delay="200">_.find</p>
+                <p class="animated fadeInDown" data-delay="200">_.flatMap</p>
+                <p class="animated fadeInDown" data-delay="200">_.groupBy</p>
+                <p class="animated fadeInDown" data-delay="200">_.includes</p>
+                <p class="animated fadeInDown" data-delay="200">_.invokeMap</p>
+                <p class="animated fadeInDown" data-delay="200">_.keyBy</p>
+                <p class="animated fadeInDown" data-delay="200">_.map</p>
+                <p class="animated fadeInDown" data-delay="200">_.orderBy</p>
+                <p class="animated fadeInDown" data-delay="200">_.partition</p>
+                <p class="animated fadeInDown" data-delay="200">_.reduce</p>
+                <p class="animated fadeInDown" data-delay="200">_.reject</p>
+                <p class="animated fadeInDown" data-delay="200">_.sample</p>
+                <p class="animated fadeInDown" data-delay="200">_.shuffle</p>
+                <p class="animated fadeInDown" data-delay="200">_.size</p>
+                <p class="animated fadeInDown" data-delay="200">_.some</p>
+                <p class="animated fadeInDown" data-delay="200">_.sortBy</p>
+            </div>
+          </section>
+          <section style="font-size: 18px;">
+            <p class="method-name"><span class="blue">_......</span>(........)</p>
+              <p class="middle">
+                Adds .......................<br><br>
+              <b>Arguments:</b><br>
+              <span class="blue">......: </span>The.......<br>
+              <span class="blue">....: </span>.....<br>
+              <span class="blue">.....: </span>T.....<br>
+              <span class="blue">...: </span>.....<br><br>
+              <b>Returns:</b><br>
+              <span class="blue">: </span>Returns .....<br><br>
+              Example:
+            </p>
+              <pre class="pre-code"><code class="code JavaScript">
+                some code
+                </code></pre>
+          </section>
+        </section>
+
+          <!-- ----------------------Dates---------------------------------- -->
+
+        <section style="font-size: 30px;">
+          <span class="subtitle">Dates </span> <br> There is only one method if you want work with dates:<br><br>
+            <p class="method-name"><span class="blue">_.now()</span></p>
+            <p class="middle">
+              Gets the timestamp of the number of milliseconds that have elapsed since the Unix epoch<br>(1 January 1970 00:00:00 UTC).<br><br>
+            <b>Returns:</b><br>
+            <span class="blue">(number): </span>Returns the timestamp.<br><br>
+            Example:
+            </p>
+            <pre class="pre-code"><code class="code JavaScript">
+              _.defer(function(stamp) {
+                console.log(_.now() - stamp);
+              }, _.now());
+              // => Logs the number of milliseconds it took for the deferred invocation.
+            </code></pre>
+        </section>
+
+
+        <!-- ----------------------Fuction---------------------------------- -->
+
+        <section>
+          <section class="category-all">
+            <span class="subtitle">Functions </span> <br> In the list below, you can see functions methods:
+              <div class="category-wrapper">
+                <p class="animated fadeInDown" data-delay="200">_.after</p>
+                <p class="animated fadeInDown" data-delay="200">_.ary</p>
+                <p class="animated fadeInDown" data-delay="200">_.before</p>
+                <p class="animated fadeInDown" data-delay="200">_.bind</p>
+                <p class="animated fadeInDown" data-delay="200">_.bindKey</p>
+                <p class="animated fadeInDown" data-delay="200">_.curry</p>
+                <p class="animated fadeInDown" data-delay="200">_.debounce</p>
+                <p class="animated fadeInDown" data-delay="200">_.defer</p>
+                <p class="animated fadeInDown" data-delay="200">_.delay</p>
+                <p class="animated fadeInDown" data-delay="200">_.flip</p>
+                <p class="animated fadeInDown" data-delay="200">_.memoize</p>
+                <p class="animated fadeInDown" data-delay="200">_.negate</p>
+                <p class="animated fadeInDown" data-delay="200">_.once</p>
+                <p class="animated fadeInDown" data-delay="200">_.overArgs</p>
+                <p class="animated fadeInDown" data-delay="200">_.partial</p>
+                <p class="animated fadeInDown" data-delay="200">_.rearg</p>
+                <p class="animated fadeInDown" data-delay="200">_.rest</p>
+                <p class="animated fadeInDown" data-delay="200">_.spread</p>
+                <p class="animated fadeInDown" data-delay="200">_.throttle</p>
+                <p class="animated fadeInDown" data-delay="200">_.unary</p>
+                <p class="animated fadeInDown" data-delay="200">_.wrap</p>
+            </div>
+          </section>
+          <section style="font-size: 18px;">
+            <p class="method-name"><span class="blue">_......</span>(........)</p>
+              <p class="middle">
+                Adds .......................<br><br>
+              <b>Arguments:</b><br>
+              <span class="blue">......: </span>The.......<br>
+              <span class="blue">....: </span>.....<br>
+              <span class="blue">.....: </span>T.....<br>
+              <span class="blue">...: </span>.....<br><br>
+              <b>Returns:</b><br>
+              <span class="blue">: </span>Returns .....<br><br>
+              Example:
+            </p>
+              <pre class="pre-code"><code class="code JavaScript">
+                some code
+                </code></pre>
+          </section>
+        </section>
+        
+        <!-- ----------------------Lang---------------------------------- -->
+
+        <section>
+          <section class="category-all">
+            <span class="subtitle">Lang </span> <br> There are many useful methods below:
+              <div class="category-wrapper">
+                <p class="animated fadeInDown" data-delay="200">_.castArray</p>
+                <p class="animated fadeInDown" data-delay="200">_.clone</p>
+                <p class="animated fadeInDown" data-delay="200">_.cloneDeep</p>
+                <p class="animated fadeInDown" data-delay="200">_.eq</p>
+                <p class="animated fadeInDown" data-delay="200">_.isArguments</p>
+                <p class="animated fadeInDown" data-delay="200">_.isArrayLike</p>
+                <p class="animated fadeInDown" data-delay="200">_.isDate</p>
+                <p class="animated fadeInDown" data-delay="200">_.isEmpty</p>
+                <p class="animated fadeInDown" data-delay="200">_.isMap</p>
+                <p class="animated fadeInDown" data-delay="200">_.isNative</p>
+                <p class="animated fadeInDown" data-delay="200">_.isObjectLike</p>
+                <p class="animated fadeInDown" data-delay="200">_.isPlainObject</p>
+                <p class="animated fadeInDown" data-delay="200">_.isRegExp</p>
+                <p class="animated fadeInDown" data-delay="200">_.isSet</p>
+                <p class="animated fadeInDown" data-delay="200">_.toArray</p>
+                <p class="animated fadeInDown" data-delay="200">_.toPlainObject</p>
+                <p class="animated fadeInDown" data-delay="200">_.toFinite</p>
+                <p class="animated fadeInDown" data-delay="200">_.toLength</p>
+                <p class="animated fadeInDown" data-delay="200">_.toString</p>
+                <p class="animated fadeInDown" data-delay="200">etc...</p>
+            </div>
+          </section>
+          <section style="font-size: 18px;">
+            <p class="method-name"><span class="blue">_......</span>(........)</p>
+              <p class="middle">
+                Adds .......................<br><br>
+              <b>Arguments:</b><br>
+              <span class="blue">......: </span>The.......<br>
+              <span class="blue">....: </span>.....<br>
+              <span class="blue">.....: </span>T.....<br>
+              <span class="blue">...: </span>.....<br><br>
+              <b>Returns:</b><br>
+              <span class="blue">: </span>Returns .....<br><br>
+              Example:
+            </p>
+              <pre class="pre-code"><code class="code JavaScript">
+                some code
+                </code></pre>
+          </section>
+        </section>
+
+        <!-- ----------------------Math------------------------------------- -->
+
+        <section>
+          <section class="category-all big">
+            <span class="subtitle">Math </span> <br> let's see on math's methods, providing by library:
+              <div class="category-wrapper">
+                <p class="animated fadeInDown" data-delay="200">_.add</p>
+                <p class="animated fadeInDown" data-delay="200">_.ceil</p>
+                <p class="animated fadeInDown" data-delay="200">_.divide</p>
+                <p class="animated fadeInDown" data-delay="200">_.floor</p>
+                <p class="animated fadeInDown" data-delay="200">_.max</p>
+                <p class="animated fadeInDown" data-delay="200">_.maxBy</p>
+                <p class="animated fadeInDown" data-delay="200">_.mean</p>
+                <p class="animated fadeInDown" data-delay="200">_.meanBy</p>
+                <p class="animated fadeInDown" data-delay="200">_.min</p>
+                <p class="animated fadeInDown" data-delay="200">_.minBy</p>
+                <p class="animated fadeInDown" data-delay="200">_.multiply</p>
+                <p class="animated fadeInDown" data-delay="200">_.round</p>
+                <p class="animated fadeInDown" data-delay="200">_.subtract</p>
+                <p class="animated fadeInDown" data-delay="200">_.sum</p>
+                <p class="animated fadeInDown" data-delay="200">_.sumBy</p>
+            </div>
+          </section>
+          <section style="font-size: 18px;">
+            <p class="method-name"><span class="blue">_......</span>(........)</p>
+              <p class="middle">
+                Adds .......................<br><br>
+              <b>Arguments:</b><br>
+              <span class="blue">......: </span>The.......<br>
+              <span class="blue">....: </span>.....<br>
+              <span class="blue">.....: </span>T.....<br>
+              <span class="blue">...: </span>.....<br><br>
+              <b>Returns:</b><br>
+              <span class="blue">: </span>Returns .....<br><br>
+              Example:
+            </p>
+              <pre class="pre-code"><code class="code JavaScript">
+                some code
+                </code></pre>
+          </section>
+        </section>
+
+        <!-- ----------------------Numbers------------------------------------- -->
+
+        <section>
+          <section class="category-all extra">
+            <span class="subtitle">Numbers </span> <br> Some numbers methods below:
+              <div class="category-wrapper">
+                <p class="animated fadeInDown" data-delay="200">_.clamp</p>
+                <p class="animated fadeInDown" data-delay="200">_.inRange</p>
+                <p class="animated fadeInDown" data-delay="200">_.random</p>
+            </div>
+          </section>
+          <section style="font-size: 18px;">
+            <p class="method-name"><span class="blue">_......</span>(........)</p>
+              <p class="middle">
+                Adds .......................<br><br>
+              <b>Arguments:</b><br>
+              <span class="blue">......: </span>The.......<br>
+              <span class="blue">....: </span>.....<br>
+              <span class="blue">.....: </span>T.....<br>
+              <span class="blue">...: </span>.....<br><br>
+              <b>Returns:</b><br>
+              <span class="blue">: </span>Returns .....<br><br>
+              Example:
+            </p>
+              <pre class="pre-code"><code class="code JavaScript">
+                some code
+                </code></pre>
+          </section>
+        </section>
+
+        
+        <!-- ----------------------Objects------------------------------------- -->
+
+        <section>
+          <section class="category-all">
+            <span class="subtitle">Objects </span> <br> let's see on object's methods, providing by library:
+              <div class="category-wrapper">
+                <p class="animated fadeInDown" data-delay="200">_.assign</p>
+                <p class="animated fadeInDown" data-delay="200">_.assignIn</p>
+                <p class="animated fadeInDown" data-delay="200">_.assignInWith</p>
+                <p class="animated fadeInDown" data-delay="200">_.assignWith</p>
+                <p class="animated fadeInDown" data-delay="200">_.at</p>
+                <p class="animated fadeInDown" data-delay="200">_.create</p>
+                <p class="animated fadeInDown" data-delay="200">_.defaults</p>
+                <p class="animated fadeInDown" data-delay="200">_.defaultsDeep</p>
+                <p class="animated fadeInDown" data-delay="200">_.entries -> toPairs</p>
+                <p class="animated fadeInDown" data-delay="200">_.entriesIn -> toPairsIn</p>
+                <p class="animated fadeInDown" data-delay="200">_.extend -> assignIn</p>
+                <p class="animated fadeInDown" data-delay="200">_.findKey</p>
+                <p class="animated fadeInDown" data-delay="200">_.forIn</p>
+                <p class="animated fadeInDown" data-delay="200">_.forOwn</p>
+                <p class="animated fadeInDown" data-delay="200">_.functions</p>
+                <p class="animated fadeInDown" data-delay="200">_.get</p>
+                <p class="animated fadeInDown" data-delay="200">_.has</p>
+                <p class="animated fadeInDown" data-delay="200">_.invert</p>
+                <p class="animated fadeInDown" data-delay="200">_.invoke</p>
+                <p class="animated fadeInDown" data-delay="200">_.keys</p>
+                <p class="animated fadeInDown" data-delay="200">_.mapKeys</p>
+                <p class="animated fadeInDown" data-delay="200">_.merge</p>
+                <p class="animated fadeInDown" data-delay="200">_.omit</p>
+                <p class="animated fadeInDown" data-delay="200">_.pick</p>
+                <p class="animated fadeInDown" data-delay="200">_.set</p>
+                <p class="animated fadeInDown" data-delay="200">_.toPairs</p>
+                <p class="animated fadeInDown" data-delay="200">_.unset</p>
+                <p class="animated fadeInDown" data-delay="200">_.update</p>
+                <p class="animated fadeInDown" data-delay="200">_.values</p>
+                <p class="animated fadeInDown" data-delay="200">etc...</p>
+            </div>
+          </section>
+          <section style="font-size: 18px;">
+            <p class="method-name"><span class="blue">_......</span>(........)</p>
+              <p class="middle">
+                Adds .......................<br><br>
+              <b>Arguments:</b><br>
+              <span class="blue">......: </span>The.......<br>
+              <span class="blue">....: </span>.....<br>
+              <span class="blue">.....: </span>T.....<br>
+              <span class="blue">...: </span>.....<br><br>
+              <b>Returns:</b><br>
+              <span class="blue">: </span>Returns .....<br><br>
+              Example:
+            </p>
+              <pre class="pre-code"><code class="code JavaScript">
+                some code
+                </code></pre>
+          </section>
+        </section>
+
+        <!-- ----------------------Seq------------------------------------- -->
+
+        <section>
+          <section class="category-all big">
+            <span class="subtitle">Sequences </span> <br> let's see on sequence methods below:
+              <div class="category-wrapper">
+                <p class="animated fadeInDown" data-delay="200">_.chain</p>
+                <p class="animated fadeInDown" data-delay="200">_.tap</p>
+                <p class="animated fadeInDown" data-delay="200">_.thru</p>
+                <p class="animated fadeInDown" data-delay="200">_.prototype[Symbol.iterator]</p>
+                <p class="animated fadeInDown" data-delay="200">_.prototype.at</p>
+                <p class="animated fadeInDown" data-delay="200">_.prototype.chain</p>
+                <p class="animated fadeInDown" data-delay="200">_.prototype.commit</p>
+                <p class="animated fadeInDown" data-delay="200">_.prototype.next</p>
+                <p class="animated fadeInDown" data-delay="200">_.prototype.plant</p>
+                <p class="animated fadeInDown" data-delay="200">_.prototype.reverse</p>
+                <p class="animated fadeInDown" data-delay="200">_.prototype.toJSON -> value</p>
+                <p class="animated fadeInDown" data-delay="200">_.prototype.value</p>
+            </div>
+          </section>
+          <section style="font-size: 18px;">
+            <p class="method-name"><span class="blue">_......</span>(........)</p>
+              <p class="middle">
+                Adds .......................<br><br>
+              <b>Arguments:</b><br>
+              <span class="blue">......: </span>The.......<br>
+              <span class="blue">....: </span>.....<br>
+              <span class="blue">.....: </span>T.....<br>
+              <span class="blue">...: </span>.....<br><br>
+              <b>Returns:</b><br>
+              <span class="blue">: </span>Returns .....<br><br>
+              Example:
+            </p>
+              <pre class="pre-code"><code class="code JavaScript">
+                some code
+                </code></pre>
+          </section>
+        </section>
+
+
+        <!-- ----------------------Utilites---------------------------------- -->
+
+          <section>
+            <section class="category-all">
+              <span class="subtitle">Utilities </span> <br> there are many "Util" Methods, such as:
+                <div class="category-wrapper">
+                <p class="animated fadeInDown" data-delay="200">_.attempt</p>
+                <p class="animated fadeInDown" data-delay="200">_.bindAll</p>
+                <p class="animated fadeInDown" data-delay="200">_.cond</p>
+                <p class="animated fadeInDown" data-delay="200">_.conforms</p>
+                <p class="animated fadeInDown" data-delay="200">_.constant</p>
+                <p class="animated fadeInDown" data-delay="200">_.defaultTo</p>
+                <p class="animated fadeInDown" data-delay="200">_.flow</p>
+                <p class="animated fadeInDown" data-delay="200">_.identity</p>
+                <p class="animated fadeInDown" data-delay="200">_.matches</p>
+                <p class="animated fadeInDown" data-delay="200">_.matchesProperty</p>
+                <p class="animated fadeInDown" data-delay="200">_.method</p>
+                <p class="animated fadeInDown" data-delay="200">_.methodOf</p>
+                <p class="animated fadeInDown" data-delay="200">_.mixin</p>
+                <p class="animated fadeInDown" data-delay="200">_.noConflict</p>
+                <p class="animated fadeInDown" data-delay="200">_.noop</p>
+                <p class="animated fadeInDown" data-delay="200">_.nthArg</p>
+                <p class="animated fadeInDown" data-delay="200">_.over</p>
+                <p class="animated fadeInDown" data-delay="200">_.overEvery</p>
+                <p class="animated fadeInDown" data-delay="200">_.overSome</p>
+                <p class="animated fadeInDown" data-delay="200">_.property</p>
+                <p class="animated fadeInDown" data-delay="200">_.propertyOf</p>
+                <p class="animated fadeInDown" data-delay="200">_.range</p>
+                <p class="animated fadeInDown" data-delay="200">_.rangeRight</p>
+                <p class="animated fadeInDown" data-delay="200">_.runInContext</p>
+                <p class="animated fadeInDown" data-delay="200">_.stubArray</p>
+                <p class="animated fadeInDown" data-delay="200">_.stubFalse</p>
+                <p class="animated fadeInDown" data-delay="200">_.stubObject</p>
+                <p class="animated fadeInDown" data-delay="200">_.stubString</p>
+                <p class="animated fadeInDown" data-delay="200">_.stubTrue</p>
+                <p class="animated fadeInDown" data-delay="200">_.times</p>
+                <p class="animated fadeInDown" data-delay="200">_.toPath</p>
+                <p class="animated fadeInDown" data-delay="200">_.uniqueId</p>
+              </div>
+            </section>
+            <section style="font-size: 18px;">
+              <p class="method-name"><span class="blue">_.mixin</span>([object=lodash], source, [options={}])</p>
+                <p class="middle">
+                  Adds all own enumerable string keyed function properties of a source object to the destination object.
+                  If object is a function, then methods are added to its prototype as well.<br><br>
+                <b>Arguments:</b><br>
+                <span class="blue">[object=lodash] (Function|Object): </span>The destination object.<br>
+                <span class="blue">source (Object): </span>The object of functions to add.<br>
+                <span class="blue">[options={}] (Object): </span>The options object.<br>
+                <span class="blue">[options.chain=true] (boolean): </span>Specify whether mixins are chainable.<br><br>
+                <b>Returns:</b><br>
+                <span class="blue">(*): </span>Returns object.<br><br>
+                Example:
+              </p>
+                <pre class="pre-code"><code class="code JavaScript">
+                  function vowels(string) {
+                    return _.filter(string, function(v) {
+                      return /[aeiou]/i.test(v);
+                    });
+                  }
+                   
+                  _.mixin({ 'vowels': vowels });
+                  _.vowels('fred');
+                  // => ['e']
+                   
+                  _('fred').vowels().value();
+                  // => ['e']
+                   
+                  _.mixin({ 'vowels': vowels }, { 'chain': false });
+                  _('fred').vowels();
+                  // => ['e']
+                  </code></pre>
+            </section>
+            <section>
+              <p class="method-name"><span class="blue">_.uniqueId</span>([prefix=''])</p>
+                <p class="middle">
+                  Generates a unique ID. If prefix is given, the ID is appended to it.<br><br>
+                  <b>Arguments:</b><br>
+                  <span class="blue">[prefix=''] (string):</span> The value to prefix the ID with.<br><br>
+                  <b>Returns:</b><br>
+                  <span class="blue">(string): </span>Returns the unique ID.<br><br>
+                  Example:
+                </p>
+                <pre class="pre-code"><code class="code JavaScript">
+                  _.uniqueId('contact_');
+                  // => 'contact_104'
+                   
+                  _.uniqueId();
+                  // => '105'
+                  </code></pre>
+            </section>
+            <section style="font-size: 36px;">
+              <p class="method-name"><span class="blue">_.stubObject()</span></p>
+                <p class="middle">
+                  This method returns a new empty object.<br><br>
+                  Returns:<br>
+                  <span class="blue">(Object): </span>Returns the new empty object.<br><br>
+                  Example
+                </p>
+                <pre class="pre-code"><code class="code JavaScript">
+                  var objects = _.times(2, _.stubObject);
+ 
+                  console.log(objects);
+                  // => [{}, {}]
+                   
+                  console.log(objects[0] === objects[1]);
+                  // => false
+                  </code></pre>
+            </section>
+          </section>
+
+        <!-- ----------------------install----------------------------------- -->
+
+          <section class="install" style="font-size: 24px; text-align: left;">
+            <p class="method-name"><span class="blue">Lodash installation</span></p><br>
+              <!-- In a browser:
+              <pre class="pre-code"><code>
+                &lt;script src="lodash.js"&gt;&lt;/script&gt;
+            </code></pre> -->
+              Using npm:
+              <pre class="pre-code"><code>
+                  $ npm init
+                  $ npm i lodash
+              </code></pre>
+              <span style="font-size: 18px;">So, there are three methods for importing from Lodash,
+              without using external plugins: <br><br></span>
+              1. Import the whole library:
+              <pre class="pre-code"><code>
+                import _ from 'lodash';
+              </code></pre>
+                2. Import specific methods inside of curly brackets:              
+              <pre class="pre-code"><code>
+                import { map, tail, times, uniq } from 'lodash';
+              </code></pre>
+              3. Import specific methods one by one:
+              <pre class="pre-code"><code>
+                import map from 'lodash/map';
+                import tail from 'lodash/tail';
+                import times from 'lodash/times';
+                import uniq from 'lodash/uniq';
+              </code></pre>
+          </section>
+        </div>
+      </div>
+</body>
+</html>
+
+
+
+<!-- <section class="utility-some" style="font-size: 24px;">
+  <p class="method-name"><span class="blue">_.result</span>(object, path, [defaultValue])</p>
+    <p class="middle">
+      This method is like _.get except that if the resolved value is a function
+      it's invoked with the this binding of its parent object and its result is returned.<br><br>
+      <b>Arguments:</b><br>
+      <span class="blue">object (Object)</span>: The object to query.<br>
+      <span class="blue">path (Array|string):</span> The path of the property to resolve.<br>
+      <span class="blue">[defaultValue] (*):</span> The value returned for undefined resolved values.<br><br>
+      Returns:<br>
+      <span class="blue">(*):</span> Returns the resolved value.<br><br>
+      Example
+    </p>
+    <pre class="pre-code"><code class="code JavaScript">
+let object = { 'a': [{ 'b': { 'c1': 3, 'c2': _.constant(4) } }] };
+
+_.result(object, 'a[0].b.c1');
+// => 3
+                  
+_.result(object, 'a[0].b.c3', _.constant('default'));
+// => 'default'
+      </code></pre>
+</section> -->
