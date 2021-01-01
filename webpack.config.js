@@ -28,7 +28,7 @@ const config = {
   target: "web",
   entry: {index: './src/js/index.js'},
   output: {
-    path: path.resolve(__dirname, 'covid-dashboard'),
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js'
   },
   mode: setDMode(),

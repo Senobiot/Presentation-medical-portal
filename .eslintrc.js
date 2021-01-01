@@ -17,5 +17,6 @@ module.exports = {
     },
     "rules": {
         'linebreak-style': ['error', 'unix'],
+        'import/no-extraneous-dependencies': ['error', {'devDependencies': true}]
     }
 };

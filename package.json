@@ -1,7 +1,7 @@
 {
-  "name": "COVID-19-Dashboard",
+  "name": "presentation",
   "version": "1.0.0",
-  "description": "COVID-19-Dashboard RSSchool Task",
+  "description": "Presentaion",
   "main": "src/js/index.js",
   "browserslist": [
     "> 0.25%, not dead"
@@ -11,10 +11,10 @@
     "build": "npm run clear -s && webpack --progress",
     "lint": "eslint ./**/*.js",
     "lint:fix": "eslint --fix --ext .js,.jsx .",
-    "clear": "del-cli covid-dashboard",
+    "clear": "del-cli dist",
     "test": "mocha"
   },
-  "author": "HannaHerman, Sanazez, Senobiot",
+  "author": "Senobiot",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.9",
