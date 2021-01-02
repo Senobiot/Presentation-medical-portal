@@ -15,22 +15,32 @@ body {
     }
 }
 .loadash {
-        text-transform: uppercase;
-        font-weight: 900;
-        text-shadow: 2px 2px 5px rgb(136, 136, 136);
-        letter-spacing: 5px;
-        //text-decoration-line: underline;
+    color: rgb(255, 175, 70);
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
-.javascript {
-    color: rgb(207, 181, 149);
+.js {
+    color: rgb(255, 175, 70);
+    font-weight: 700;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+.js-small {
+    color: #cc7400;
+    text-shadow: 1px 1px 1px #150e0e;
 }
 
 .title {
-    font-size: 2em;
-    text-transform: uppercase;
+    color: rgb(255, 175, 70);
     font-weight: 900;
-    text-shadow: 2px 2px 5px rgb(136, 136, 136);
+    font-size: 2em;
     letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
     p {
     font-size: 30px;
     text-transform: uppercase;
@@ -43,10 +53,10 @@ li {
     margin-bottom: 10px;
     span {
         font-size: 24px;
-        color: burlywood;
+        color: rgb(255, 175, 70);
         font-weight: 700;
         text-transform: uppercase;
-        text-shadow: 2px 2px 5px rgb(101, 107, 75);
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
     }
 }
 .category-all {
@@ -67,7 +77,8 @@ li {
         width: 30%;
         margin: 15px 0;
         text-align: left;
-        color: #9fc9fa;
+        color: #0f509b;
+        font-weight: 700;
     }
     &.big {
         p {
@@ -85,21 +96,24 @@ li {
     }
 }
 .subtitle {
-    color: rgb(149, 155, 207);
+    color: rgb(72, 77, 126);
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .blue {
-    color: #9fc9fa;
+    color: #2e78c7;
+    font-weight: 900;
     //text-transform: uppercase;
 }
 .middle {
     font-size: 22px;
     text-align: justify;
+    font-weight: 900;
 }
 .small {
     font-size: 18px;
+    font-weight: 900;
     text-align: left;
 }
 .code {
@@ -121,6 +135,7 @@ li {
         width: 100%;
         height: 2px;
         background-color: rgb(204, 189, 189);
+        box-shadow: 2px 2px 2px #000;
         position: absolute;
     }
 }

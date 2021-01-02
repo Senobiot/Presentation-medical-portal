@@ -15,39 +15,38 @@
 <body>
     <div class="reveal">
         <div class="slides">
-          <section class="slide_title"  data-transition="convex">
+          <section class="slide_title"  data-transition="convex" data-background-color="#cacaca">
             <div class="title">Loadash</div>
             <img data-src="./img/lodashlogo.png" alt="Logo" class="logo">
           </section>
           <section>
-              <section class="slide_history"><span class="loadash">Lodash</span><br> is a <span class="javascript">JavaScript</span>
+              <section class="slide_history" data-background-color="#cacaca"><span class="loadash">Lodash</span><br> is a <span class="js">JavaScript</span>
                 library which provides utility functions for common programming tasks using the functional programming paradigm.<br><br>
-                In addition, it’s the most famous successor of <span class="javascript">underscore.js</span><br><br>
-                <span class="javascript">Lodash</span> helps programmers write more concise and easier to maintain JavaScript code.
+                In addition, it’s the most famous successor of <span class="js">underscore.js</span><br><br>
+                <span class="js">Lodash</span> helps programmers write more concise and easier to maintain JavaScript code.
               </section>
-              <section>
-                <p>We are programming every day, and work on different tasks, solving it we working with <span class="blue">fucntions</span>,
-                  <span class="blue">arrays</span>, <span class="blue">numbers</span>, <span class="blue">objects</span>, <span class="blue">strings</span>, <span class="blue">etc.</span><br><br>Loadash helps us when we working with all types of values
-                  and safe your time from writing generic functions and so on.
-                  At the result our code will be cleaner and more obvious.
+              <section data-background-color="#cacaca">
+                <p>We are programming every day, and work on different tasks, solving it we ARE DEALING with <span class="blue" style="text-transform: uppercase;">fucntions</span>,
+                  <span class="blue">arrays</span>, <span class="blue">numbers</span>, <span class="blue">objects</span>, <span class="blue">strings</span>, <span class="blue">etc.</span><br><br>LODASH
+                  helps us when we ARE DEALING with all types of values and safe your time from writing generic functions and so on. At the result our code will be READABLE and more obvious.
                 </p>
               </section>
-              <section class="slide_history" style="font-size: 30px; text-align: left;" >The main advantages of using <span class="loadash">Lodash</span> is: <br>
+              <section class="slide_history" style="font-size: 30px; text-align: left;" data-background-color="#cacaca">The main advantages of using<span class="loadash"> Lodash are:</span><br>
                 <span style="line-height: 1.5;">
+                  - CREATING pure simple functions;<br>
                   - that you don't have to worry about compatibility (it has compatibility with all major browsers irrespective of their versions);<br>
                   - allows to build semantic data flows;<br>
-                  - writitng pure simple functions;<br>
-                  - it has high-quality documentation and easy to start.<br><br>            
-                   The main diadvantage of using <span class="loadash">Lodash</span> is that you are adding an external dependency to your application. <br><br>
+                  - it has high-quality documentation and easy to start.<br><br>   
+                   The main DISADVANTAGE of using <span class="loadash">Lodash</span> is AN ADDITIONAL external dependency to your application. <br><br>
                 </span>
-                <span class="javascript">
+                <span class="js-small">
                   So, there is one more thing you should know: ECMAScript 2015 has a lot of new features which are not going to be in lodash.
                   If the target environment has ES6 support, consider whether you should use this library or not.
                   Because you will avoid an external dependency and performance benefits will also be comparably better.
                 </span>
               </section>
           </section>
-          <section class="slide_mainAreas" data-transition="convex">
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#cacaca">
             <p><span class="loadash">Lodash</span> can be broken down into several main areas:</p>
             <ul>
               <li class='animated bounceInLeft' data-delay="300"><span>Array: </span>creating, splitting, combining, modifying, and compressing</li>
@@ -63,8 +62,7 @@
               <li class='animated bounceInLeft' data-delay="300"><span>Utilities: </span>for simplifying common programming tasks such as determining type as well as simplifying math operations.</li>
             </ul>
           </section>
-
-          <section  data-transition="convex">
+          <section data-transition="convex" data-background-color="#cacaca">
               <section class="category-all">
                 <span class="subtitle">Arrays </span> <br> let's see on array's methods, providing by library:
                   <div class="category-wrapper">
@@ -153,8 +151,7 @@
                     </code></pre>
               </section>
           </section>
-
-          <section  data-transition="convex">
+          <section  data-transition="convex" data-background-color="#cacaca">
             <section class="category-all">
               <span class="subtitle">Collections </span> <br> There are some collection's methods, providing by library:
                 <div class="category-wrapper">
@@ -193,12 +190,12 @@
                 Example:
               </p>
                 <pre class="pre-code"><code class="code JavaScript">
-                  _.size([1, 2, 3]);
-                  // => 3
-                  
                   _.size({ 'a': 1, 'b': 2 });
                   // => 2
                   
+                  _.size({ 'name': 'Alex', 'age': 37 });
+                  // => 2
+
                   _.size('pebbles');
                   // => 7
                   </code></pre>
@@ -248,7 +245,7 @@
             </section>
           </section>
 
-          <section style="font-size: 30px;"  data-transition="convex">
+          <section style="font-size: 30px;"  data-transition="convex"  data-background-color="#cacaca">
             <span class="subtitle">Dates </span> <br> There is only one method if you want work with dates:<br><br>
               <p class="method-name"><span class="blue">_.now()</span></p>
               <p class="middle">
@@ -265,7 +262,7 @@
               </code></pre>
           </section>
 
-          <section  data-transition="convex">
+          <section  data-transition="convex" data-background-color="#cacaca">
             <section class="category-all">
               <span class="subtitle">Functions </span> <br> In the list below, you can see functions methods:
                 <div class="category-wrapper">
@@ -382,7 +379,7 @@
             </section>
           </section>    
 
-          <section  data-transition="convex">
+          <section  data-transition="convex" data-background-color="#cacaca">
             <section class="category-all">
               <span class="subtitle">Lang </span> <br> There are many useful methods below:
                 <div class="category-wrapper">
@@ -491,7 +488,9 @@
                 <span class="blue">(boolean): </span>Returns true if value is empty, else false.<br><br>
                 Example:
               </p>
-                <pre class="pre-code"><code class="code JavaScript">
+                <pre class="pre-code" style="display: flex;"><code class="code JavaScript" style="width: 50%;">
+                  // LOADASH isEmpty Method:
+
                   _.isEmpty(null);
                   // => true
                   
@@ -506,11 +505,21 @@
                   
                   _.isEmpty({ 'a': 1 });
                   // => false
-                  </code></pre>
+                  </code>
+                  <code class="code JavaScript" style="width: 50%;">
+// 'Vanilla' javaScript isEmpty method
+
+let isEmpty = (obj) => {
+  if (typeof obj === 'object' && obj != null) {
+    return Object.keys(obj).length >= 1 ? false : true;
+  }
+  return true;
+};
+                    </code>
+                </pre>
             </section>
           </section>
-
-          <section  data-transition="convex">
+          <section  data-transition="convex" data-background-color="#cacaca">
             <section class="category-all big">
               <span class="subtitle">Math </span> <br> let's see on math's methods, providing by library:
                 <div class="category-wrapper">
@@ -578,7 +587,7 @@
             </section>
           </section>
 
-          <section>
+          <section data-background-color="#cacaca">
             <section class="category-all extra">
               <span class="subtitle">Numbers </span> <br> Some numbers methods below:
                 <div class="category-wrapper">
@@ -617,7 +626,7 @@
             </section>
           </section>
   
-          <section  data-transition="convex">
+          <section  data-transition="convex" data-background-color="#cacaca">
             <section class="category-all">
               <span class="subtitle">Objects </span> <br> let's see on object's methods, providing by library:
                 <div class="category-wrapper">
@@ -722,7 +731,7 @@
             </section>
           </section>
 
-          <section data-transition="convex">
+          <section data-transition="convex" data-background-color="#cacaca">
             <section class="category-all big">
               <span class="subtitle">Sequences </span> <br> let's see on sequence methods below:
                 <div class="category-wrapper">
@@ -792,7 +801,7 @@
             </section>
           </section>
 
-          <section data-transition="convex">
+          <section data-transition="convex" data-background-color="#cacaca">
               <section class="category-all">
                 <span class="subtitle">Strings </span> <br> In the list below tou can see string metthods:
                   <div class="category-wrapper">
@@ -896,7 +905,7 @@
               </section>
           </section>
 
-          <section data-transition="convex">
+          <section data-transition="convex" data-background-color="#cacaca">
               <section class="category-all">
                 <span class="subtitle">Utilities </span> <br> there are many "Util" Methods, such as:
                   <div class="category-wrapper">
@@ -967,7 +976,7 @@
                     // => ['e']
                     </code></pre>
               </section>
-              <section>
+              <section style="font-size: 28px;">
                 <p class="method-name"><span class="blue">_.uniqueId</span>([prefix=''])</p>
                   <p class="middle">
                     Generates a unique ID. If prefix is given, the ID is appended to it.<br><br>
@@ -977,13 +986,31 @@
                     <span class="blue">(string): </span>Returns the unique ID.<br><br>
                     Example:
                   </p>
-                  <pre class="pre-code"><code class="code JavaScript">
-                    _.uniqueId('contact_');
-                    // => 'contact_104'
-                    
-                    _.uniqueId();
-                    // => '105'
-                    </code></pre>
+                  <pre class="pre-code" style="display: flex;"><code class="code JavaScript" style="width: 50%;">
+    // LOADASH uniqueId method
+
+    _.uniqueId('contact_');
+    // => 'contact_104'
+
+    _.uniqueId();
+    // => '105'
+                    </code>
+                    <code class="code JavaScript" style="width: 50%;">
+// Vanilla js alternative
+
+let uniqueId = (function () {
+  let num = 0;
+  return function (prefix) {
+      prefix = String(prefix) || '';
+      num += 1;
+      return prefix + num;
+  }
+}
+  ());
+
+let id = uniqueId('id_');
+                    </code>
+                  </pre>
               </section>
               <section style="font-size: 36px;">
                 <p class="method-name"><span class="blue">_.stubObject()</span></p>
@@ -1005,7 +1032,7 @@
               </section>
           </section>
 
-          <section class="install" style="font-size: 24px; text-align: left;"  data-transition="convex">
+          <section class="install" style="font-size: 24px; text-align: left;"  data-transition="convex" data-background-color="#cacaca"> 
               <p class="method-name"><span class="blue">Lodash installation and use</span></p><br><br>
                 Install:
                 <pre class="pre-code"><code>
@@ -1021,21 +1048,21 @@
                 <br><br>
                   - the whole library:
                 <pre class="pre-code"><code>
-                  import _ from 'lodash';
+                  import _ from 'lodash'; // ~ 72.46 KB
                 </code></pre>
                   - specific methods          
                 <pre class="pre-code"><code>
                   //  inside of curly brackets:    
-                  import { map, tail, times, uniq } from 'lodash'; 
+                  import { map, tail, times, uniq } from 'lodash'; // ~ 19.97 KB
 
                   // Import specific methods one by one: 
                   import map from 'lodash/map';
                   import tail from 'lodash/tail';
                 </code></pre>
           </section>
-          <section>
+          <section  data-background-color="#cacaca">
             Thank you for your attention.<br><br>
-            <span style="text-transform: uppercase;"><span class="javascript" style="font-weight: 900;">Loadash </span>Presentation</span><br>
+            <span><span class="js" style="font-weight: 900;">Loadash </span>&nbsp;presentation</span><br>
             by Aliaksandr Kulik<br><br>
             <span class="blue">(https://github.com/Senobiot)</span>
           </section>
