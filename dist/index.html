@@ -6,7 +6,7 @@
     <meta name="description" content="Loadash Pesentation" />
     <meta name="author" lang="en" content="Aliaksandr Kulik" />
     <title>Presentation</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -15,1056 +15,130 @@
 <body>
     <div class="reveal">
         <div class="slides">
-          <section class="slide_title"  data-transition="convex" data-background-color="#cacaca">
-            <div class="title">Loadash</div>
-            <img data-src="./img/lodashlogo.png" alt="Logo" class="logo">
+          <section class="slide_title"  data-transition="convex" data-background-color="#afcde2">
+            <div class="title">Clone Wars</div>
+            <img data-src="./img/rs_school.svg" alt="Logo" class="logo">
+            <div >Итоговый проект курса <span class="js">JS / FRONT-END</span></div>
           </section>
           <section>
-              <section class="slide_history" data-background-color="#cacaca"><span class="loadash">Lodash</span><br> is a <span class="js">JavaScript</span>
-                library which provides utility functions for common programming tasks using the functional programming paradigm.<br><br>
-                In addition, it’s the most famous successor of <span class="js">underscore.js</span><br><br>
-                <span class="js">Lodash</span> helps programmers write more concise and easier to maintain JavaScript code.
-              </section>
-              <section data-background-color="#cacaca">
-                <p>We are programming every day, and work on different tasks, solving it we ARE DEALING with <span class="blue" style="text-transform: uppercase;">fucntions</span>,
-                  <span class="blue">arrays</span>, <span class="blue">numbers</span>, <span class="blue">objects</span>, <span class="blue">strings</span>, <span class="blue">etc.</span><br><br>LODASH
-                  helps us when we ARE DEALING with all types of values and safe your time from writing generic functions and so on. At the result our code will be READABLE and more obvious.
-                </p>
-              </section>
-              <section class="slide_history" style="font-size: 30px; text-align: left;" data-background-color="#cacaca">The main advantages of using<span class="loadash"> Lodash are:</span><br>
-                <span style="line-height: 1.5;">
-                  - CREATING pure simple functions;<br>
-                  - that you don't have to worry about compatibility (it has compatibility with all major browsers irrespective of their versions);<br>
-                  - allows to build semantic data flows;<br>
-                  - it has high-quality documentation and easy to start.<br><br>   
-                   The main DISADVANTAGE of using <span class="loadash">Lodash</span> is AN ADDITIONAL external dependency to your application. <br><br>
-                </span>
-                <span class="js-small">
-                  So, there is one more thing you should know: ECMAScript 2015 has a lot of new features which are not going to be in lodash.
-                  If the target environment has ES6 support, consider whether you should use this library or not.
-                  Because you will avoid an external dependency and performance benefits will also be comparably better.
-                </span>
-              </section>
-          </section>
-          <section class="slide_mainAreas" data-transition="convex" data-background-color="#cacaca">
-            <p><span class="loadash">Lodash</span> can be broken down into several main areas:</p>
-            <ul>
-              <li class='animated bounceInLeft' data-delay="300"><span>Array: </span>creating, splitting, combining, modifying, and compressing</li>
-              <li class='animated bounceInLeft' data-delay="300"><span>Collection: </span>iterating, sorting, filtering, splitting, and building</li>
-              <li class='animated bounceInLeft' data-delay="300"><span>Date: </span>gets the tamestamps</li>         
-              <li class='animated bounceInLeft' data-delay="300"><span>Function: </span>simplifying binding, decorating, constraining, throttling, debouncing, currying, and changing the pointer</li>
-              <li class='animated bounceInLeft' data-delay="300"><span>Lang: </span>checks if value is the language type</li>
-              <li class='animated bounceInLeft' data-delay="300"><span>Math: </span>different math operations</li>
-              <li class='animated bounceInLeft' data-delay="300"><span>Number: </span>number operations</li>  
-              <li class='animated bounceInLeft' data-delay="300"><span>Object: </span>accessing, extending, merging, defaults, and transforming</li>
-              <li class='animated bounceInLeft' data-delay="300"><span>Seq: </span>chaining, wrapping, filtering, and testing.</li>
-              <li class='animated bounceInLeft' data-delay="300"><span>String: </span>conversion functions for performing basic string operations, such as trimming, converting to uppercase, camel case, etc.</li>
-              <li class='animated bounceInLeft' data-delay="300"><span>Utilities: </span>for simplifying common programming tasks such as determining type as well as simplifying math operations.</li>
-            </ul>
-          </section>
-          <section data-transition="convex" data-background-color="#cacaca">
-              <section class="category-all">
-                <span class="subtitle">Arrays </span> <br> let's see on array's methods, providing by library:
-                  <div class="category-wrapper">
-                    <p class="animated fadeInDown" data-delay="200">_.chunk</p>
-                    <p class="animated fadeInDown" data-delay="200">_.compact</p>
-                    <p class="animated fadeInDown" data-delay="200">_.concat</p>
-                    <p class="animated fadeInDown" data-delay="200">_.difference</p>
-                    <p class="animated fadeInDown" data-delay="200">_.drop</p>
-                    <p class="animated fadeInDown" data-delay="200">_.fill</p>
-                    <p class="animated fadeInDown" data-delay="200">_.findIndex</p>
-                    <p class="animated fadeInDown" data-delay="200">_.first -> head</p>
-                    <p class="animated fadeInDown" data-delay="200">_.flatten</p>
-                    <p class="animated fadeInDown" data-delay="200">_.fromPairs</p>
-                    <p class="animated fadeInDown" data-delay="200">_.head</p>
-                    <p class="animated fadeInDown" data-delay="200">_.indexOf</p>
-                    <p class="animated fadeInDown" data-delay="200">_.initial</p>
-                    <p class="animated fadeInDown" data-delay="200">_.intersection</p>
-                    <p class="animated fadeInDown" data-delay="200">_.join</p>
-                    <p class="animated fadeInDown" data-delay="200">_.last</p>
-                    <p class="animated fadeInDown" data-delay="200">_.nth</p>
-                    <p class="animated fadeInDown" data-delay="200">_.pull</p>
-                    <p class="animated fadeInDown" data-delay="200">_.remove</p>
-                    <p class="animated fadeInDown" data-delay="200">_.reverse</p>
-                    <p class="animated fadeInDown" data-delay="200">_.slice</p>
-                    <p class="animated fadeInDown" data-delay="200">_.sortedIndex</p>
-                    <p class="animated fadeInDown" data-delay="200">_.tail</p>
-                    <p class="animated fadeInDown" data-delay="200">_.take</p>
-                    <p class="animated fadeInDown" data-delay="200">_.union</p>
-                    <p class="animated fadeInDown" data-delay="200">_.uniq</p>
-                    <p class="animated fadeInDown" data-delay="200">_.unzip</p>
-                    <p class="animated fadeInDown" data-delay="200">_.without</p>
-                    <p class="animated fadeInDown" data-delay="200">_.xor</p>
-                    <p class="animated fadeInDown" data-delay="200">_.zip</p>
-                    <p class="animated fadeInDown" data-delay="200">_.zipObject</p>
+              <section class="slide_history" data-background-color="#afcde2">
+                <div class="flexy">
+                  <div class="loadash">Команда разработчиков:</div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="js">@AlinaSuhorebraya</span><span>Алина: тимлид</span></div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="js">@KLIM-nk01</span><span>Никита</span></div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="js">@cup0ra</span><span>Сергей</span></div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="js">@Senobiot</span><span>Александр</span></div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="js">@375291601334</span><span>Анастасия: ментор проекта</span></div>
+                </div>
+                <div class="flexy">
+                  <div class='animated bounceInLeft loadash' data-delay="2000">Варианты проектов:</div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="jw">- Доставка еды</span><span></span></div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="jw">- Контроль веса</span><span></span></div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="jsR" style="width: 100%">- Приготовлению блюда из ингридиентов в холодильнике</span><span ></span></div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="jsR">- Звуковой редактор</span><span></span></div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="jsR">- 3D-генератор портфолио</span><span></span></div>
+                  <div class='animated bounceInLeft' data-delay="300"><span class="jsR">- Игра</span><span></span></div>
+                  <div class='animated bounceInLeft' data-delay="1000"><span class="jsG">Выбрано</span><span >Приложение клиент-администратор по поиску медицинской услуги и записи к врачу</span></div>
                 </div>
               </section>
-              <section>
-                <p class="method-name"><span class="blue">_.chunk</span>(array, [size=1])</p>
-                  <p class="middle">
-                    Creates an array of elements split into groups the length of size.
-                    If array can't be split evenly, the final chunk will be the remaining elements.<br><br>
-                  <b>Arguments:</b><br>
-                  <span class="blue">array (Array): </span>The array to process.<br>
-                  <span class="blue">[size=1] (number): </span>The length of each chunk<br><br>
-                  <b>Returns:</b><br>
-                  <span class="blue">(Array): </span>Returns the new array of chunks.<br><br>
-                  Example:
-                </p>
-                  <pre class="pre-code"><code class="code JavaScript">
-                    _.chunk(['a', 'b', 'c', 'd'], 2);
-                    // => [['a', 'b'], ['c', 'd']]
-                    
-                    _.chunk(['a', 'b', 'c', 'd'], 3);
-                    // => [['a', 'b', 'c'], ['d']]
-                    </code></pre>
-              </section>
-              <section>
-                <p class="method-name"><span class="blue">_.union</span>([arrays])</p>
-                  <p class="middle">
-                    Creates an array of unique values, in order, from all given arrays using SameValueZero for equality comparisons.<br><br>
-                  <b>Arguments:</b><br>
-                  <span class="blue">[arrays] (...Array): </span>The array to inspect.<br>
-                  <b>Returns:</b><br>
-                  <span class="blue">(Array): </span> Returns the new array of combined values.<br><br>
-                  Example:
-                </p>
-                  <pre class="pre-code"><code class="code JavaScript">
-                    _.union([2], [1, 2]);
-                    // => [2, 1]
-                    </code></pre>
-              </section>
-              <section>
-                <p class="method-name"><span class="blue">._zip</span>_([arrays])</p>
-                  <p class="middle">
-                    Creates an array of grouped elements, the first of which contains the first elements of the given arrays,
-                    the second of which contains the second elements of the given arrays, and so on.<br><br>
-                  <b>Arguments:</b><br>
-                  <span class="blue">[arrays] (...Array): </span>The arrays to process.<br>
-                  <b>Returns:</b><br>
-                  <span class="blue">(Array): </span> Returns the new array of grouped elements.<br><br>
-                  Example:
-                </p>
-                  <pre class="pre-code"><code class="code JavaScript">
-                    _.zip(['a', 'b'], [1, 2], [true, false]);
-                    // => [['a', 1, true], ['b', 2, false]]
-                    </code></pre>
-              </section>
           </section>
-          <section  data-transition="convex" data-background-color="#cacaca">
-            <section class="category-all">
-              <span class="subtitle">Collections </span> <br> There are some collection's methods, providing by library:
-                <div class="category-wrapper">
-                  <p class="animated fadeInDown" data-delay="200">_.countBy</p>
-                  <p class="animated fadeInDown" data-delay="200">_.each -> forEach</p>
-                  <p class="animated fadeInDown" data-delay="200">_.eachRight -> forEachRight</p>
-                  <p class="animated fadeInDown" data-delay="200">_.every</p>
-                  <p class="animated fadeInDown" data-delay="200">_.filter</p>
-                  <p class="animated fadeInDown" data-delay="200">_.find</p>
-                  <p class="animated fadeInDown" data-delay="200">_.flatMap</p>
-                  <p class="animated fadeInDown" data-delay="200">_.groupBy</p>
-                  <p class="animated fadeInDown" data-delay="200">_.includes</p>
-                  <p class="animated fadeInDown" data-delay="200">_.invokeMap</p>
-                  <p class="animated fadeInDown" data-delay="200">_.keyBy</p>
-                  <p class="animated fadeInDown" data-delay="200">_.map</p>
-                  <p class="animated fadeInDown" data-delay="200">_.orderBy</p>
-                  <p class="animated fadeInDown" data-delay="200">_.partition</p>
-                  <p class="animated fadeInDown" data-delay="200">_.reduce</p>
-                  <p class="animated fadeInDown" data-delay="200">_.reject</p>
-                  <p class="animated fadeInDown" data-delay="200">_.sample</p>
-                  <p class="animated fadeInDown" data-delay="200">_.shuffle</p>
-                  <p class="animated fadeInDown" data-delay="200">_.size</p>
-                  <p class="animated fadeInDown" data-delay="200">_.some</p>
-                  <p class="animated fadeInDown" data-delay="200">_.sortBy</p>
+          <section class="slide_mainAreas" data-transition="convex">
+            <section class="slide_history" data-background-color="#afcde2">
+              <div class="flexy">
+                <div class="loadash">Решено использовать следующие технологии</div>
+                <div class='animated bounceInLeft whiteTile' data-delay="1300"><span class="loadash">React</span><img src="img/react.png" alt="react"></div>
+                <div class='animated bounceInLeft whiteTile' data-delay="300"><span class="loadash">TypeScript</span><img src="img/ts.png" alt="react"></div>
+                <div class='animated bounceInLeft whiteTile' data-delay="300"><span class="loadash">Firebase</span><img src="img/Firebase.svg.png" alt="react"></div>
+                <div class='animated bounceInLeft whiteTile' data-delay="300"><span class="loadash">Redux</span><img src="img/redux.png" alt="react"></div>
               </div>
-            </section>
-            <section>
-              <p class="method-name"><span class="blue">_.size</span>(collection)</p>
-                <p class="middle">
-                  Gets the size of collection by returning its length for array-like
-                  values or the number of own enumerable string keyed properties for objects.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">collection (Array|Object|string): </span>The collection to inspect.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(number): </span>Returns the collection size.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  _.size({ 'a': 1, 'b': 2 });
-                  // => 2
-                  
-                  _.size({ 'name': 'Alex', 'age': 37 });
-                  // => 2
-
-                  _.size('pebbles');
-                  // => 7
-                  </code></pre>
-            </section>
-            <section>
-              <p class="method-name"><span class="blue">_.shuffle</span>(collection)</p>
-                <p class="middle"><br><br>
-                  Creates an array of shuffled values, using a version of the Fisher-Yates shuffle. <br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">collection (Array|Object):  </span>The collection to shuffle.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(Array): </span>Returns the new shuffled array.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  _.shuffle([1, 2, 3, 4]);
-                  // => [4, 1, 3, 2]
-                  </code></pre>
-            </section>
-            <section style="font-size: 24px;">
-              <p class="method-name"><span class="blue">_.sortBy</span>(collection, [iteratees=[_.identity]])</p>
-                <p class="middle">
-                  Creates an array of elements, sorted in ascending order by the results of running each element 
-                  in a collection thru each iteratee. This method performs a stable sort, that is, it preserves
-                  the original sort order of equal elements. The iteratees are invoked with one argument: (value).<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">collection (Array|Object): </span>The collection to iterate over.<br>
-                <span class="blue">[iteratees=[_.identity]] (...(Function|Function[ ])): </span>The iteratees to sort by.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(Array): </span> Returns the new sorted array.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let users = [
-                    { 'user': 'fred',   'age': 48 },
-                    { 'user': 'barney', 'age': 36 },
-                    { 'user': 'fred',   'age': 40 },
-                    { 'user': 'barney', 'age': 34 }
-                  ];
-                  
-                  _.sortBy(users, [function(o) { return o.user; }]);
-                  // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
-                  
-                  _.sortBy(users, ['user', 'age']);
-                  // => objects for [['barney', 34], ['barney', 36], ['fred', 40], ['fred', 48]]
-                  </code></pre>
+              <div class="flexy">
+                <div class='animated bounceInLeft loadash' data-delay="1300">Позже, потребуются:</div>
+                <div class='animated bounceInLeft whiteTile' data-delay="300"><span class="loadash">React Leaflet</span><img src="img/leaflet.svg" alt="react"></div>
+                <div class='animated bounceInLeft whiteTile' data-delay="300"><span class="loadash">Spring.js</span><img src="img/spring.png" alt="react"></div>
+                <div class='animated bounceInLeft whiteTile' data-delay="300"><span class="loadash">Material UI</span><img src="img/material.svg" alt="react"></div>
+            </div>
             </section>
           </section>
-
-          <section style="font-size: 30px;"  data-transition="convex"  data-background-color="#cacaca">
-            <span class="subtitle">Dates </span> <br> There is only one method if you want work with dates:<br><br>
-              <p class="method-name"><span class="blue">_.now()</span></p>
-              <p class="middle">
-                Gets the timestamp of the number of milliseconds that have elapsed since the Unix epoch<br>(1 January 1970 00:00:00 UTC).<br><br>
-              <b>Returns:</b><br>
-              <span class="blue">(number): </span>Returns the timestamp.<br><br>
-              Example:
-              </p>
-              <pre class="pre-code"><code class="code JavaScript">
-                _.defer(function(stamp) {
-                  console.log(_.now() - stamp);
-                }, _.now());
-                // => Logs the number of milliseconds it took for the deferred invocation.
-              </code></pre>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small" style="text-align: center;">Проанализировали состав bundle после сборки:</div>
+              <img class="containImg" style="width: 100%; height: auto" src="img/bundle.jpg" alt="sheme">
           </section>
-
-          <section  data-transition="convex" data-background-color="#cacaca">
-            <section class="category-all">
-              <span class="subtitle">Functions </span> <br> In the list below, you can see functions methods:
-                <div class="category-wrapper">
-                  <p class="animated fadeInDown" data-delay="200">_.after</p>
-                  <p class="animated fadeInDown" data-delay="200">_.ary</p>
-                  <p class="animated fadeInDown" data-delay="200">_.before</p>
-                  <p class="animated fadeInDown" data-delay="200">_.bind</p>
-                  <p class="animated fadeInDown" data-delay="200">_.bindKey</p>
-                  <p class="animated fadeInDown" data-delay="200">_.curry</p>
-                  <p class="animated fadeInDown" data-delay="200">_.debounce</p>
-                  <p class="animated fadeInDown" data-delay="200">_.defer</p>
-                  <p class="animated fadeInDown" data-delay="200">_.delay</p>
-                  <p class="animated fadeInDown" data-delay="200">_.flip</p>
-                  <p class="animated fadeInDown" data-delay="200">_.memoize</p>
-                  <p class="animated fadeInDown" data-delay="200">_.negate</p>
-                  <p class="animated fadeInDown" data-delay="200">_.once</p>
-                  <p class="animated fadeInDown" data-delay="200">_.overArgs</p>
-                  <p class="animated fadeInDown" data-delay="200">_.partial</p>
-                  <p class="animated fadeInDown" data-delay="200">_.rearg</p>
-                  <p class="animated fadeInDown" data-delay="200">_.rest</p>
-                  <p class="animated fadeInDown" data-delay="200">_.spread</p>
-                  <p class="animated fadeInDown" data-delay="200">_.throttle</p>
-                  <p class="animated fadeInDown" data-delay="200">_.unary</p>
-                  <p class="animated fadeInDown" data-delay="200">_.wrap</p>
-              </div>
-            </section>
-            <section style="font-size: 24px;">
-              <p class="method-name"><span class="blue">_.curry</span>(func, [arity=func.length])</p>
-                <p class="middle">
-                  Creates a function that accepts arguments of func and either invokes func returning its result,
-                  if at least arity number of arguments have been provided, or returns a function that accepts the remaining 
-                  func arguments, and so on. The arity of func may be specified if func.length is not sufficient.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">func (Function): </span>The function to curry.<br>
-                <span class="blue">[arity=func.length] (number): </span>The arity of func.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(Function): </span>Returns the new curried function.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let abc = function(a, b, c) {
-                    return [a, b, c];
-                  };
-                  
-                  let curried = _.curry(abc);
-                  
-                  curried(1)(2)(3);
-                  // => [1, 2, 3]
-                  
-                  curried(1, 2)(3);
-                  // => [1, 2, 3]
-                                  
-                  curried(1, 2, 3);
-                  // => [1, 2, 3]
-                  </code></pre>
-            </section>
-            <section>
-              <p class="method-name"><span class="blue">_.defer</span>(func, [args])</p>
-                <p class="middle">
-                  Defers invoking the func until the current call stack has cleared.
-                  Any additional arguments are provided to func when it's invoked.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">func (Function): </span>The function to defer.<br>
-                <span class="blue">[args] (...*): </span>The arguments to invoke func with.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(number): </span>Returns the timer id.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  _.defer(function(text) {
-                    console.log(text);
-                  }, 'deferred');
-                  // => Logs 'deferred' after one millisecond.
-                  </code></pre>
-            </section>
-            <section style="font-size: 23px;">
-              <p class="method-name"><span class="blue">_.memoize</span>(func, [resolver])</p>
-                <p class="small">
-                  Creates a function that memoizes the result of func.
-                  If resolver is provided, it determines the cache key for storing the result based
-                  on the arguments provided to the memoized function. By default, the first argument 
-                  provided to the memoized function is used as the map cache key. The func is invoked
-                  with the this binding of the memoized function.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">func (Function): </span>The function to have its output memoized.<br>
-                <span class="blue">[resolver] (Function): </span>The function to resolve the cache key.<br>
-                <b>Returns:</b><br>
-                <span class="blue">(Function):</span>Returns the new memoized function.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let object = { 'a': 1, 'b': 2 };
-                  let other = { 'c': 3, 'd': 4 };
-                  
-                  let values = _.memoize(_.values);
-                  values(object);
-                  // => [1, 2]
-                  
-                  values(other);
-                  // => [3, 4]
-                  
-                  object.a = 2;
-                  values(object);
-                  // => [1, 2]
-                  
-                  // Modify the result cache.
-                  values.cache.set(object, ['a', 'b']);
-                  values(object);
-                  // => ['a', 'b']
-                  
-                  // Replace `_.memoize.Cache`.
-                  _.memoize.Cache = WeakMap;
-                  </code></pre>
-            </section>
-          </section>    
-
-          <section  data-transition="convex" data-background-color="#cacaca">
-            <section class="category-all">
-              <span class="subtitle">Lang </span> <br> There are many useful methods below:
-                <div class="category-wrapper">
-                  <p class="animated fadeInDown" data-delay="200">_.castArray</p>
-                  <p class="animated fadeInDown" data-delay="200">_.clone</p>
-                  <p class="animated fadeInDown" data-delay="200">_.cloneDeep</p>
-                  <p class="animated fadeInDown" data-delay="200">_.eq</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isArguments</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isArrayLike</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isDate</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isEmpty</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isMap</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isNative</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isObjectLike</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isPlainObject</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isRegExp</p>
-                  <p class="animated fadeInDown" data-delay="200">_.isSet</p>
-                  <p class="animated fadeInDown" data-delay="200">_.toArray</p>
-                  <p class="animated fadeInDown" data-delay="200">_.toPlainObject</p>
-                  <p class="animated fadeInDown" data-delay="200">_.toFinite</p>
-                  <p class="animated fadeInDown" data-delay="200">_.toLength</p>
-                  <p class="animated fadeInDown" data-delay="200">_.toString</p>
-                  <p class="animated fadeInDown" data-delay="200">etc...</p>
-              </div>
-            </section>
-            <section style="font-size: 26px;">
-              <p class="method-name"><span class="blue">_.clone</span>(value)</p>
-                <p class="small">
-                  Creates a shallow clone of value. <br><br>
-                  <span class="blue">Note:</span> This method is loosely based on the structured clone 
-                  algorithm and supports cloning arrays, array buffers, booleans, date objects, maps, numbers,
-                  Object objects, regexes, sets, strings, symbols, and typed arrays. The own enumerable properties
-                  of arguments objects are cloned as plain objects. An empty object is returned for uncloneable 
-                  values such as error objects, functions, DOM nodes, and WeakMaps.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">value (*): </span>The value to clone.<br>
-
-                <b>Returns:</b><br>
-                <span class="blue">(*): </span>Returns the cloned value.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let objects = [{ 'a': 1 }, { 'b': 2 }];
-  
-                  let shallow = _.clone(objects);
-                  console.log(shallow[0] === objects[0]);
-                  // => true
-                  </code></pre>
-            </section>
-            <section style="font-size: 26px;">
-              <p class="method-name"><span class="blue">_.cloneDeep</span>(value)</p>
-                <p class="middle">
-                  This method is like _.clone except that it recursively clones value.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">value (*): </span>The value to recursively clone.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(*): </span>Returns the deep cloned value.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let objects = [{ 'a': 1 }, { 'b': 2 }];
-  
-                  let deep = _.cloneDeep(objects);
-                  console.log(deep[0] === objects[0]);
-                  // => false
-                  </code></pre>
-            </section>
-            <section style="font-size: 26px;">
-              <p class="method-name"><span class="blue">_.isEqual</span>(value, other)</p>
-                <p class="small">
-                  Performs a deep comparison between two values to determine if they are equivalent. <br><br>
-                  <span class="blue">Note: </span>This method supports comparing arrays, array buffers,
-                  booleans, date objects, error objects, maps, numbers,
-                  Object objects, regexes, sets, strings, symbols, and typed arrays.
-                  Object objects are compared by their own, not inherited, enumerable properties.
-                  Functions and DOM nodes are compared by strict equality, i.e. ===.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">value (*): </span>The value to compare.<br>
-                <span class="blue">other (*): </span>The other value to compare.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(boolean): </span>Returns true if the values are equivalent, else false.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let object = { 'a': 1 };
-                  let other = { 'a': 1 };
-                  
-                  _.isEqual(object, other);
-                  // => true
-                  
-                  object === other;
-                  // => false
-                  </code></pre>
-            </section>
-            <section style="font-size: 26px;">
-              <p class="method-name"><span class="blue">_.isEmpty</span>(value)</p>
-                <p class="small">
-                  Checks if value is an empty object, collection, map, or set.
-                  Objects are considered empty if they have no own enumerable string keyed properties.
-                  Array-like values such as arguments objects, arrays, buffers, strings,
-                  or jQuery-like collections are considered empty if they have a length of 0. 
-                  Similarly, maps and sets are considered empty if they have a size of 0.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">value (*): </span>The value to check.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(boolean): </span>Returns true if value is empty, else false.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code" style="display: flex;"><code class="code JavaScript" style="width: 50%;">
-                  // LOADASH isEmpty Method:
-
-                  _.isEmpty(null);
-                  // => true
-                  
-                  _.isEmpty(true);
-                  // => true
-                  
-                  _.isEmpty(1);
-                  // => true
-                  
-                  _.isEmpty([1, 2, 3]);
-                  // => false
-                  
-                  _.isEmpty({ 'a': 1 });
-                  // => false
-                  </code>
-                  <code class="code JavaScript" style="width: 50%;">
-// 'Vanilla' javaScript isEmpty method
-
-let isEmpty = (obj) => {
-  if (typeof obj === 'object' && obj != null) {
-    return Object.keys(obj).length >= 1 ? false : true;
-  }
-  return true;
-};
-                    </code>
-                </pre>
-            </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash">Какие задачи должно было решать приложение?</div>
+            <div class='animated bounceInLeft js' style="text-align: center; margin: 20px auto;" data-delay="2300">Освновная идея, это разделение ролей:</div>
+            <div class='animated bounceInLeft whiteTile small' data-delay="300">Роль пациента: может авторизоваться, записываться на прием к врачу, выбирать медицинский центр и услуги</div>
+            <div class='animated bounceInLeft whiteTile small' data-delay="300">Роль врача: возможность авторизоваться, добавить своё расписание работы и посмотреть кто к нему записан на приём.</div><br>
+            <div class='animated bounceInLeft  js' style="text-align: center; margin: 20px auto;" data-delay="3000">Реализация роли врача, в целом была ясна сразу, но что нужно пациенту?</div>
+            <div class='animated bounceInLeft whiteTile small' data-delay="300">&#9745; Найти врача по квалификации</div>
+            <div class='animated bounceInLeft whiteTile small' data-delay="300">&#9745; Найти услугу по названию</div>
+            <div class='animated bounceInLeft whiteTile small' data-delay="300">&#9745; Найти услугу из перечня услуг, если он не уверен как она называется</div>
+            <div class='animated bounceInLeft whiteTile small' data-delay="300">&#9745; Найти медицинский центр, которые предоставляет ту или иную услугу</div>
+            <div class='animated bounceInLeft whiteTile small' data-delay="300">&#9745; Посмотреть какие услуги предоставляетмедицинский центр </div>
+            <div class='animated bounceInLeft whiteTile small' data-delay="300">&#9745; Цены на услуги в том или ином мдицинском центре и др.</div>
+        </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+              <div class="loadash small">Начало рабоаты и первичный макет логики приложения:</div>
+                <img class="containImg" src="img/sheme.png" alt="sheme">
           </section>
-          <section  data-transition="convex" data-background-color="#cacaca">
-            <section class="category-all big">
-              <span class="subtitle">Math </span> <br> let's see on math's methods, providing by library:
-                <div class="category-wrapper">
-                  <p class="animated fadeInDown" data-delay="200">_.add</p>
-                  <p class="animated fadeInDown" data-delay="200">_.ceil</p>
-                  <p class="animated fadeInDown" data-delay="200">_.divide</p>
-                  <p class="animated fadeInDown" data-delay="200">_.floor</p>
-                  <p class="animated fadeInDown" data-delay="200">_.max</p>
-                  <p class="animated fadeInDown" data-delay="200">_.maxBy</p>
-                  <p class="animated fadeInDown" data-delay="200">_.mean</p>
-                  <p class="animated fadeInDown" data-delay="200">_.meanBy</p>
-                  <p class="animated fadeInDown" data-delay="200">_.min</p>
-                  <p class="animated fadeInDown" data-delay="200">_.minBy</p>
-                  <p class="animated fadeInDown" data-delay="200">_.multiply</p>
-                  <p class="animated fadeInDown" data-delay="200">_.round</p>
-                  <p class="animated fadeInDown" data-delay="200">_.subtract</p>
-                  <p class="animated fadeInDown" data-delay="200">_.sum</p>
-                  <p class="animated fadeInDown" data-delay="200">_.sumBy</p>
-              </div>
-            </section>
-            <section style="font-size: 30px;">
-              <p class="method-name"><span class="blue">_.ceil</span>(number, [precision=0])</p>
-                <p class="middle">
-                  Computes number rounded up to precision.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">number (number): </span>The number to round up.<br>
-                <span class="blue">[precision=0] (number): </span>The precision to round up to.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(number): </span> Returns the rounded up number.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  _.ceil(4.006);
-                  // => 5
-                  
-                  _.ceil(6.004, 2);
-                  // => 6.01
-                  
-                  _.ceil(6040, -2);
-                  // => 6100
-                  </code></pre>
-            </section>
-            <section style="font-size: 30px;">
-              <p class="method-name"><span class="blue">_.maxBy</span>(array, [iteratee=_.identity])</p>
-                <p class="middle">
-                  This method is like _.max except that it accepts iteratee which is invoked for each element
-                  in array to generate the criterion by which the value is ranked. The iteratee is invoked with one argument: (value).<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">array (Array): </span>The array to iterate over.<br>
-                <span class="blue">[iteratee=_.identity] (Function): </span>The iteratee invoked per element.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(*): </span> Returns the maximum value.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let objects = [{ 'n': 1 }, { 'n': 2 }];
-  
-                _.maxBy(objects, function(o) { return o.n; });
-                // => { 'n': 2 }
-                
-                // The `_.property` iteratee shorthand.
-                _.maxBy(objects, 'n');
-                // => { 'n': 2 }
-                  </code></pre>
-            </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small" style="text-align: center; margin-bottom: 20px;">Перенос на доску задач github</div>
+            <div class="js small animated bounceInLeft" data-delay="300">► Тимлид согласует и ставит задачу</div>
+              <img src="img/canban1.jpg" class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
+              <div class="js small animated bounceInLeft" data-delay="1300">► Ответственные за задачу принмают к исполнению</div>
+              <img src="img/canban2.jpg" class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
+              <div class="js small animated bounceInLeft" data-delay="1300">► Задача выполнена</div>
+              <img src="img/canban3.jpg" class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
           </section>
-
-          <section data-background-color="#cacaca">
-            <section class="category-all extra">
-              <span class="subtitle">Numbers </span> <br> Some numbers methods below:
-                <div class="category-wrapper">
-                  <p class="animated fadeInDown" data-delay="200">_.clamp</p>
-                  <p class="animated fadeInDown" data-delay="200">_.inRange</p>
-                  <p class="animated fadeInDown" data-delay="200">_.random</p>
-              </div>
-            </section>
-            <section style="font-size: 30px;">
-              <p class="method-name"><span class="blue">_.random</span>([lower=0], [upper=1], [floating])</p>
-                <p class="small">
-                  Produces a random number between the inclusive lower and upper bounds.
-                  If only one argument is provided a number between 0 and the given number is returned.
-                    If floating is true, or either lower or upper are floats, a floating-point number is returned instead of an integer.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">[lower=0] (number): </span>The lower bound.<br>
-                <span class="blue">[upper=1] (number): </span>The upper bound.<br>
-                <span class="blue">[floating] (boolean): </span>Specify returning a floating-point number.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(number): </span>Returns the random number.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  _.random(0, 5);
-                // => an integer between 0 and 5
-                
-                _.random(5);
-                // => also an integer between 0 and 5
-                
-                _.random(5, true);
-                // => a floating-point number between 0 and 5
-                
-                _.random(1.2, 5.2);
-                // => a floating-point number between 1.2 and 5.2
-                </code></pre>
-            </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small" style="text-align: center; margin-bottom: 20px;">RACL матрицы проекта</div>
+              <img src="img/racl.jpg"  class='animated bounceInLeft' data-delay="300" style="height: 80vh; width: 600px; margin-top: 0;" alt="sheme">
           </section>
-  
-          <section  data-transition="convex" data-background-color="#cacaca">
-            <section class="category-all">
-              <span class="subtitle">Objects </span> <br> let's see on object's methods, providing by library:
-                <div class="category-wrapper">
-                  <p class="animated fadeInDown" data-delay="200">_.assign</p>
-                  <p class="animated fadeInDown" data-delay="200">_.assignIn</p>
-                  <p class="animated fadeInDown" data-delay="200">_.assignInWith</p>
-                  <p class="animated fadeInDown" data-delay="200">_.assignWith</p>
-                  <p class="animated fadeInDown" data-delay="200">_.at</p>
-                  <p class="animated fadeInDown" data-delay="200">_.create</p>
-                  <p class="animated fadeInDown" data-delay="200">_.defaults</p>
-                  <p class="animated fadeInDown" data-delay="200">_.defaultsDeep</p>
-                  <p class="animated fadeInDown" data-delay="200">_.entries -> toPairs</p>
-                  <p class="animated fadeInDown" data-delay="200">_.entriesIn -> toPairsIn</p>
-                  <p class="animated fadeInDown" data-delay="200">_.extend -> assignIn</p>
-                  <p class="animated fadeInDown" data-delay="200">_.findKey</p>
-                  <p class="animated fadeInDown" data-delay="200">_.forIn</p>
-                  <p class="animated fadeInDown" data-delay="200">_.forOwn</p>
-                  <p class="animated fadeInDown" data-delay="200">_.functions</p>
-                  <p class="animated fadeInDown" data-delay="200">_.get</p>
-                  <p class="animated fadeInDown" data-delay="200">_.has</p>
-                  <p class="animated fadeInDown" data-delay="200">_.invert</p>
-                  <p class="animated fadeInDown" data-delay="200">_.invoke</p>
-                  <p class="animated fadeInDown" data-delay="200">_.keys</p>
-                  <p class="animated fadeInDown" data-delay="200">_.mapKeys</p>
-                  <p class="animated fadeInDown" data-delay="200">_.merge</p>
-                  <p class="animated fadeInDown" data-delay="200">_.omit</p>
-                  <p class="animated fadeInDown" data-delay="200">_.pick</p>
-                  <p class="animated fadeInDown" data-delay="200">_.set</p>
-                  <p class="animated fadeInDown" data-delay="200">_.toPairs</p>
-                  <p class="animated fadeInDown" data-delay="200">_.unset</p>
-                  <p class="animated fadeInDown" data-delay="200">_.update</p>
-                  <p class="animated fadeInDown" data-delay="200">_.values</p>
-                  <p class="animated fadeInDown" data-delay="200">etc...</p>
-              </div>
-            </section>
-            <section>
-              <p class="method-name"><span class="blue">_.pick</span>(object, [paths])</p>
-                <p class="middle">
-                  Creates an object composed of the picked object properties.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">object (Object): </span>The source object.<br>
-                <span class="blue">[paths] (...(string|string[])): </span>The property paths to pick.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(Object):</span>Returns the new object.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let object = { 'a': 1, 'b': '2', 'c': 3 };
-  
-                _.pick(object, ['a', 'c']);
-                // => { 'a': 1, 'c': 3 }
-                  </code></pre>
-            </section>
-            <section>
-              <p class="method-name"><span class="blue">_.omit</span>(object, [paths])</p>
-                <p class="middle">
-                  The opposite of _.pick; this method creates an object composed 
-                  of the own and inherited enumerable property paths of object that are not omitted. <br><br>
-                  <span class="blue">Note: </span>This method is considerably slower than _.pick.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">object (Object): </span>The source object.<br>
-                <span class="blue">[paths] (...(string|string[])): </span>The property paths to omit.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(Object): </span>Returns the new object.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let object = { 'a': 1, 'b': '2', 'c': 3 };
-  
-                  _.omit(object, ['a', 'c']);
-                  // => { 'b': '2' }
-                  </code></pre>
-            </section>
-            <section style="font-size: 30px;">
-              <p class="method-name"><span class="blue">_.merge</span>(object, [sources])</p>
-                <p class="small">
-                  This method is like _.assign except that it recursively merges own and inherited
-                  enumerable string keyed properties of source objects into the destination object.
-                  Source properties that resolve to undefined are skipped if a destination value exists.
-                  Array and plain object properties are merged recursively. Other objects and value types
-                  are overridden by assignment. Source objects are applied from left to right.
-                  Subsequent sources overwrite property assignments of previous sources.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">object (Object): </span>The destination object.<br>
-                <span class="blue">[sources] (...Object): </span>The source objects.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(Object): </span> Returns object.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let object = {
-                    'a': [{ 'b': 2 }, { 'd': 4 }]
-                  };
-                  
-                  let other = {
-                    'a': [{ 'c': 3 }, { 'e': 5 }]
-                  };
-                  
-                  _.merge(object, other);
-                  // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
-                  </code></pre>
-            </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small" style="text-align: center; margin-bottom: 20px;">Процесс разработки - примеры Pull Requests</div>
+            <div class="js small animated bounceInLeft" data-delay="300">► Всегда поясняй что добавлено PR:</div>
+              <img src="img/pr3.jpg"  class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
+              <div class="js small animated bounceInLeft" data-delay="1300">► По возможности делай ссылку на деплой билда:</div>
+              <img src="img/pr1.jpg"  class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
           </section>
-
-          <section data-transition="convex" data-background-color="#cacaca">
-            <section class="category-all big">
-              <span class="subtitle">Sequences </span> <br> let's see on sequence methods below:
-                <div class="category-wrapper">
-                  <p class="animated fadeInDown" data-delay="200">_.chain</p>
-                  <p class="animated fadeInDown" data-delay="200">_.tap</p>
-                  <p class="animated fadeInDown" data-delay="200">_.thru</p>
-                  <p class="animated fadeInDown" data-delay="200">_.prototype[Symbol.iterator]</p>
-                  <p class="animated fadeInDown" data-delay="200">_.prototype.at</p>
-                  <p class="animated fadeInDown" data-delay="200">_.prototype.chain</p>
-                  <p class="animated fadeInDown" data-delay="200">_.prototype.commit</p>
-                  <p class="animated fadeInDown" data-delay="200">_.prototype.next</p>
-                  <p class="animated fadeInDown" data-delay="200">_.prototype.plant</p>
-                  <p class="animated fadeInDown" data-delay="200">_.prototype.reverse</p>
-                  <p class="animated fadeInDown" data-delay="200">_.prototype.toJSON -> value</p>
-                  <p class="animated fadeInDown" data-delay="200">_.prototype.value</p>
-              </div>
-            </section>
-            <section style="font-size: 24px;">
-              <p class="method-name"><span class="blue">_.chain</span>(value)</p>
-                <p class="middle">
-                  Creates a lodash wrapper instance that wraps value with explicit method chain sequences enabled. 
-                  The result of such sequences must be unwrapped with _#value.<br><br>
-                <b>Arguments:</b><br>
-                <span class="blue">value (*): </span>The value to wrap.<br>
-                <b>Returns:</b><br>
-                <span class="blue">(Object): </span>Returns the new lodash wrapper instance.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let users = [
-                    { 'user': 'barney',  'age': 36 },
-                    { 'user': 'fred',    'age': 40 },
-                    { 'user': 'pebbles', 'age': 1 }
-                  ];
-                  
-                  let youngest = _
-                    .chain(users)
-                    .sortBy('age')
-                    .map(function(o) {
-                      return o.user + ' is ' + o.age;
-                    })
-                    .head()
-                    .value();
-                  // => 'pebbles is 1'
-                  </code></pre>
-            </section>
-            <section>
-              <p class="method-name"><span class="blue">_.prototype.next</span>()</p>
-                <p class="middle">
-                  Gets the next value on a wrapped object following the iterator protocol.<br><br>
-                <b>Returns:</b><br>
-                <span class="blue">(Object): </span>Returns the next iterator value.<br><br>
-                Example:
-              </p>
-                <pre class="pre-code"><code class="code JavaScript">
-                  let wrapped = _([1, 2]);
-  
-                  wrapped.next();
-                  // => { 'done': false, 'value': 1 }
-                  
-                  wrapped.next();
-                  // => { 'done': false, 'value': 2 }
-                  
-                  wrapped.next();
-                  // => { 'done': true, 'value': undefined }
-                  </code></pre>
-            </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small" style="text-align: center; margin-bottom: 20px;">Процесс разработки - ещё примеры Pull Requests</div>
+            <div class="js small animated bounceInLeft" data-delay="300">► Уточняй моменты, на которые обратить внимание:</div>
+            <img src="img/pr2.jpg"class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
+            <div class="js small animated bounceInLeft" data-delay="1300">► Всегда поясняй что добавлено PR:</div>
+              <img src="img/pr4.jpg" class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
           </section>
-
-          <section data-transition="convex" data-background-color="#cacaca">
-              <section class="category-all">
-                <span class="subtitle">Strings </span> <br> In the list below tou can see string metthods:
-                  <div class="category-wrapper">
-                    <p class="animated fadeInDown" data-delay="200">_.camelCase</p>
-                    <p class="animated fadeInDown" data-delay="200">_.capitalize</p>
-                    <p class="animated fadeInDown" data-delay="200">_.deburr</p>
-                    <p class="animated fadeInDown" data-delay="200">_.endsWith</p>
-                    <p class="animated fadeInDown" data-delay="200">_.escape</p>
-                    <p class="animated fadeInDown" data-delay="200">_.escapeRegExp</p>
-                    <p class="animated fadeInDown" data-delay="200">_.kebabCase</p>
-                    <p class="animated fadeInDown" data-delay="200">_.lowerCase</p>
-                    <p class="animated fadeInDown" data-delay="200">_.lowerFirst</p>
-                    <p class="animated fadeInDown" data-delay="200">_.pad</p>
-                    <p class="animated fadeInDown" data-delay="200">_.padEnd</p>
-                    <p class="animated fadeInDown" data-delay="200">_.padStart</p>
-                    <p class="animated fadeInDown" data-delay="200">_.parseInt</p>
-                    <p class="animated fadeInDown" data-delay="200">_.repeat</p>
-                    <p class="animated fadeInDown" data-delay="200">_.replace</p>
-                    <p class="animated fadeInDown" data-delay="200">_.snakeCase</p>
-                    <p class="animated fadeInDown" data-delay="200">_.split</p>
-                    <p class="animated fadeInDown" data-delay="200">_.startCase</p>
-                    <p class="animated fadeInDown" data-delay="200">_.startsWith</p>
-                    <p class="animated fadeInDown" data-delay="200">_.template</p>
-                    <p class="animated fadeInDown" data-delay="200">_.toLower</p>
-                    <p class="animated fadeInDown" data-delay="200">_.toUpper</p>
-                    <p class="animated fadeInDown" data-delay="200">_.trim</p>
-                    <p class="animated fadeInDown" data-delay="200">_.trimEnd</p>
-                    <p class="animated fadeInDown" data-delay="200">_.trimStart</p>
-                    <p class="animated fadeInDown" data-delay="200">_.truncate</p>
-                </div>
-              </section>
-              <section>
-                <p class="method-name"><span class="blue">_.camelCase</span>([string=''])</p>
-                  <p class="middle">
-                    Converts string to camel case.<br><br>
-                  <b>Arguments:</b><br>
-                  <span class="blue">[string=''] (string): </span>The string to convert.<br><br>
-                  <b>Returns:</b><br>
-                  <span class="blue">(string): </span>Returns the camel cased string.<br><br>
-                  Example:
-                </p>
-                  <pre class="pre-code"><code class="code JavaScript">
-                    _.camelCase('Foo Bar');
-                    // => 'fooBar'
-                    
-                    _.camelCase('--foo-bar--');
-                    // => 'fooBar'
-                    
-                    _.camelCase('__FOO_BAR__');
-                    // => 'fooBar'
-                    </code></pre>
-              </section>
-              <section>
-                <p class="method-name"><span class="blue">_.capitalize</span>([string=''])</p>
-                  <p class="middle">
-                    Converts the first character of string to upper case and the remaining to lower case.<br><br>
-                  <b>Arguments:</b><br>
-                  <span class="blue">[string=''] (string): </span>The string to capitalize.<br><br>
-                  <b>Returns:</b><br>
-                  <span class="blue">(string): </span>Returns the capitalized string.<br><br>
-                  Example:
-                </p>
-                  <pre class="pre-code"><code class="code JavaScript">
-                    _.capitalize('FRED');
-                    // => 'Fred'
-                    </code></pre>
-              </section>
-              <section style="font-size: 22px;">
-                <p class="method-name"><span class="blue">_.truncate</span>([string=''], [options={}])</p>
-                  <p class="small">
-                    Truncates string if it's longer than the given maximum string length.
-                    The last characters of the truncated string are replaced with the omission string which defaults to "...".<br><br>
-                  <b>Arguments:</b><br>
-                    <span class="blue">[string=''] (string): </span>The string to truncate.<br>
-                    <span class="blue">[options={}] (Object):  </span>The options object.<br>
-                    <span class="blue">[options.length=30] (number):  </span>The maximum string length.<br>
-                    <span class="blue">[options.omission='...'] (string): </span>The string to indicate text is omitted.<br>
-                    <span class="blue">[options.separator] (RegExp|string): </span>The separator pattern to truncate to. <br><br>
-                  <b>Returns:</b><br>
-                  <span class="blue">(string): </span>Returns the truncated string.<br><br>
-                  Example:
-                </p>
-                  <pre class="pre-code"><code class="code JavaScript">
-                    _.truncate('hi-diddly-ho there, neighborino', {
-                      'length': 24,
-                      'separator': ' '
-                    });
-                    // => 'hi-diddly-ho there,...'
-                    
-                    _.truncate('hi-diddly-ho there, neighborino', {
-                      'length': 24,
-                      'separator': /,? +/
-                    });
-                    // => 'hi-diddly-ho there...'
-                    
-                    _.truncate('hi-diddly-ho there, neighborino', {
-                      'omission': ' [...]'
-                    });
-                    // => 'hi-diddly-ho there, neig [...]'
-                    </code></pre>
-              </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small animated bounceInLeft" style="text-align: center; margin-bottom: 20px;">Не всегда PR ждёт merge</div>
+            <img src="img/prs.jpg" class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 100%; margin-top: 20px;" alt="sheme">
+              <div class="js small animated bounceInLeft" data-delay="1300">Уточняй моменты, в чём сложность</div>
+              <img src="img/conflicts.jpg" class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 100%; margin-top: 0;" alt="sheme">
           </section>
-
-          <section data-transition="convex" data-background-color="#cacaca">
-              <section class="category-all">
-                <span class="subtitle">Utilities </span> <br> there are many "Util" Methods, such as:
-                  <div class="category-wrapper">
-                  <p class="animated fadeInDown" data-delay="200">_.attempt</p>
-                  <p class="animated fadeInDown" data-delay="200">_.bindAll</p>
-                  <p class="animated fadeInDown" data-delay="200">_.cond</p>
-                  <p class="animated fadeInDown" data-delay="200">_.conforms</p>
-                  <p class="animated fadeInDown" data-delay="200">_.constant</p>
-                  <p class="animated fadeInDown" data-delay="200">_.defaultTo</p>
-                  <p class="animated fadeInDown" data-delay="200">_.flow</p>
-                  <p class="animated fadeInDown" data-delay="200">_.identity</p>
-                  <p class="animated fadeInDown" data-delay="200">_.matches</p>
-                  <p class="animated fadeInDown" data-delay="200">_.matchesProperty</p>
-                  <p class="animated fadeInDown" data-delay="200">_.method</p>
-                  <p class="animated fadeInDown" data-delay="200">_.methodOf</p>
-                  <p class="animated fadeInDown" data-delay="200">_.mixin</p>
-                  <p class="animated fadeInDown" data-delay="200">_.noConflict</p>
-                  <p class="animated fadeInDown" data-delay="200">_.noop</p>
-                  <p class="animated fadeInDown" data-delay="200">_.nthArg</p>
-                  <p class="animated fadeInDown" data-delay="200">_.over</p>
-                  <p class="animated fadeInDown" data-delay="200">_.overEvery</p>
-                  <p class="animated fadeInDown" data-delay="200">_.overSome</p>
-                  <p class="animated fadeInDown" data-delay="200">_.property</p>
-                  <p class="animated fadeInDown" data-delay="200">_.propertyOf</p>
-                  <p class="animated fadeInDown" data-delay="200">_.range</p>
-                  <p class="animated fadeInDown" data-delay="200">_.rangeRight</p>
-                  <p class="animated fadeInDown" data-delay="200">_.runInContext</p>
-                  <p class="animated fadeInDown" data-delay="200">_.stubArray</p>
-                  <p class="animated fadeInDown" data-delay="200">_.stubFalse</p>
-                  <p class="animated fadeInDown" data-delay="200">_.stubObject</p>
-                  <p class="animated fadeInDown" data-delay="200">_.stubString</p>
-                  <p class="animated fadeInDown" data-delay="200">_.stubTrue</p>
-                  <p class="animated fadeInDown" data-delay="200">_.times</p>
-                  <p class="animated fadeInDown" data-delay="200">_.toPath</p>
-                  <p class="animated fadeInDown" data-delay="200">_.uniqueId</p>
-                </div>
-              </section>
-              <section style="font-size: 18px;">
-                <p class="method-name"><span class="blue">_.mixin</span>([object=lodash], source, [options={}])</p>
-                  <p class="middle">
-                    Adds all own enumerable string keyed function properties of a source object to the destination object.
-                    If object is a function, then methods are added to its prototype as well.<br><br>
-                  <b>Arguments:</b><br>
-                  <span class="blue">[object=lodash] (Function|Object): </span>The destination object.<br>
-                  <span class="blue">source (Object): </span>The object of functions to add.<br>
-                  <span class="blue">[options={}] (Object): </span>The options object.<br>
-                  <span class="blue">[options.chain=true] (boolean): </span>Specify whether mixins are chainable.<br><br>
-                  <b>Returns:</b><br>
-                  <span class="blue">(*): </span>Returns object.<br><br>
-                  Example:
-                </p>
-                  <pre class="pre-code"><code class="code JavaScript">
-                    function vowels(string) {
-                      return _.filter(string, function(v) {
-                        return /[aeiou]/i.test(v);
-                      });
-                    }
-                    
-                    _.mixin({ 'vowels': vowels });
-                    _.vowels('fred');
-                    // => ['e']
-                    
-                    _('fred').vowels().value();
-                    // => ['e']
-                    
-                    _.mixin({ 'vowels': vowels }, { 'chain': false });
-                    _('fred').vowels();
-                    // => ['e']
-                    </code></pre>
-              </section>
-              <section style="font-size: 28px;">
-                <p class="method-name"><span class="blue">_.uniqueId</span>([prefix=''])</p>
-                  <p class="middle">
-                    Generates a unique ID. If prefix is given, the ID is appended to it.<br><br>
-                    <b>Arguments:</b><br>
-                    <span class="blue">[prefix=''] (string):</span> The value to prefix the ID with.<br><br>
-                    <b>Returns:</b><br>
-                    <span class="blue">(string): </span>Returns the unique ID.<br><br>
-                    Example:
-                  </p>
-                  <pre class="pre-code" style="display: flex;"><code class="code JavaScript" style="width: 50%;">
-    // LOADASH uniqueId method
-
-    _.uniqueId('contact_');
-    // => 'contact_104'
-
-    _.uniqueId();
-    // => '105'
-                    </code>
-                    <code class="code JavaScript" style="width: 50%;">
-// Vanilla js alternative
-
-let uniqueId = (function () {
-  let num = 0;
-  return function (prefix) {
-      prefix = String(prefix) || '';
-      num += 1;
-      return prefix + num;
-  }
-}
-  ());
-
-let id = uniqueId('id_');
-                    </code>
-                  </pre>
-              </section>
-              <section style="font-size: 36px;">
-                <p class="method-name"><span class="blue">_.stubObject()</span></p>
-                  <p class="middle">
-                    This method returns a new empty object.<br><br>
-                    Returns:<br>
-                    <span class="blue">(Object): </span>Returns the new empty object.<br><br>
-                    Example
-                  </p>
-                  <pre class="pre-code"><code class="code JavaScript">
-                    let objects = _.times(2, _.stubObject);
-  
-                    console.log(objects);
-                    // => [{}, {}]
-                    
-                    console.log(objects[0] === objects[1]);
-                    // => false
-                    </code></pre>
-              </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small" style="text-align: center; margin-bottom: 20px;">Обязательное ревью кода</div>
+            <div class="js small animated bounceInLeft" data-delay="300">► Пример:</div>
+              <img src="img/request1.jpg" class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
+              <div class="js small animated bounceInLeft" data-delay="300">► Пример:</div>
+              <img src="img/request22.jpg" class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
+              <div class="js small animated bounceInLeft" data-delay="300">► Пример:</div>
+              <img src="img/request23.jpg" class='animated bounceInLeft' data-delay="1300" style="height: auto; width: 600px; margin-top: 0;" alt="sheme">
           </section>
-
-          <section class="install" style="font-size: 24px; text-align: left;"  data-transition="convex" data-background-color="#cacaca"> 
-              <p class="method-name"><span class="blue">Lodash installation and use</span></p><br><br>
-                Install:
-                <pre class="pre-code"><code>
-                  // In a browser:
-                  &lt;script src="lodash.js"&gt; &lt;/script&gt;
-
-                  // Using npm:
-                  $ npm init
-                  $ npm i lodash
-                </code></pre>
-                Import:<br>
-                <span style="font-size: 16px;">(so, there are some methods for importing from Lodash without using external plugins:)</span>
-                <br><br>
-                  - the whole library:
-                <pre class="pre-code"><code>
-                  import _ from 'lodash'; // ~ 72.46 KB
-                </code></pre>
-                  - specific methods          
-                <pre class="pre-code"><code>
-                  //  inside of curly brackets:    
-                  import { map, tail, times, uniq } from 'lodash'; // ~ 19.97 KB
-
-                  // Import specific methods one by one: 
-                  import map from 'lodash/map';
-                  import tail from 'lodash/tail';
-                </code></pre>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small" style="text-align: center; margin-bottom: 20px;">Итория коммитов приобрела такой вид:</div>
+            <img src="img/hostiry.jpg" style="height: auto; width: 100%; margin-top: 20px;" alt="sheme">
+          </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small" style="text-align: center; margin-bottom: 20px;">Итория коммитов отдельной ветки:</div>
+            <img src="img/hostiry3.jpg" style="height: auto; width: 100%; margin-top: 20px;" alt="sheme">
+          </section>
+          <section class="slide_mainAreas" data-transition="convex" data-background-color="#afcde2">
+            <div class="loadash small" style="text-align: center; margin-bottom: 20px;">Наш Changelog</div>
+            <img src="img/log.png" style="height: 60vh; width: auto; margin-top: 20px;" alt="sheme">
           </section>
           <section  data-background-color="#cacaca">
-            Thank you for your attention.<br><br>
-            <span><span class="js" style="font-weight: 900;">Loadash </span>&nbsp;presentation</span><br>
-            by Aliaksandr Kulik<br><br>
-            <span class="blue">(https://github.com/Senobiot)</span>
+            <div class="loadash small" style="text-align: center; margin-bottom: 20px;">Спасибо за внимание</div>
+            <span><span class="js" style="font-weight: 900;">&nbsp;RS School JS / FRONT-END<br>
+            <div class='animated bounceInLeft' data-delay="300"><span class="jsW">Приложение по поиску медицинских услуг и записи к врачу</span></div>
+            <span class="blue">https://rsclone-medical-portal.netlify.app/</span>
           </section>
         </div>
       </div>
